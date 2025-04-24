@@ -1,12 +1,40 @@
-class personagem {
+class Personagem {
+    #vida;
+    #força;
+    #mana;
+
     constructor(vida, força, mana) {
-        this.vida = vida;
-        this.força = força;
-        this.mana = mana;
+        this.#vida = vida;
+        this.#força = força;
+        this.#mana = mana;
+    }
+
+    get vida() {
+        return this.#vida;
+    }
+
+    set vida(novaVida) {
+        this.#vida = novaVida;
+    }
+
+    get força() {
+        return this.#força;
+    }
+
+    set força(novaForça) {
+        this.#força = novaForça;
+    }
+
+    get mana() {
+        return this.#mana;
+    }
+
+    set mana(novaMana) {
+        this.#mana = novaMana;
     }
 }
 
-class guerreiro extends personagem{
+class Guerreiro extends Personagem {
     atacar() {
         console.log("guerreiro atacou");
     }
@@ -15,12 +43,12 @@ class guerreiro extends personagem{
         console.log("guerreiro defendeu");
     }
 
-    usarEscudo(){
+    usarEscudo() {
         console.log("Guerreiro usou escudo");
     }
 }
 
-class mago extends personagem{
+class Mago extends Personagem {
     atacar() {
         console.log("mago atacou");
     }
@@ -29,12 +57,12 @@ class mago extends personagem{
         console.log("mago se defendeu");
     }
 
-    usarMagia(){
+    usarMagia() {
         console.log("mago usou magia");
     }
 }
 
-class arqueiro extends personagem{
+class Arqueiro extends Personagem {
     atacar() {
         console.log("arqueiro atacou");
     }
@@ -43,8 +71,7 @@ class arqueiro extends personagem{
         console.log("arqueiro defendeu");
     }
 
-    recarregar(){
+    recarregar() {
         console.log("arqueiro recarregou");
     }
 }
-
