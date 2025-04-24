@@ -7,29 +7,44 @@ class personagem {
 }
 
 class guerreiro extends personagem{
-    atacar(){
+    atacar() {
+        console.log("guerreiro atacou");
     }
-    defender(){
+
+    defender() {
+        console.log("guerreiro defendeu");
     }
+
     usarEscudo(){
+        console.log("Guerreiro usou escudo");
     }
 }
 
 class mago extends personagem{
-    atacar(){
+    atacar() {
+        console.log("mago atacou");
     }
-    defender(){
+
+    defender() {
+        console.log("mago se defendeu");
     }
+
     usarMagia(){
+        console.log("mago usou magia");
     }
 }
 
 class arqueiro extends personagem{
-    atacar(){
+    atacar() {
+        console.log("arqueiro atacou");
     }
-    defender(){
+
+    defender() {
+        console.log("arqueiro defendeu");
     }
+
     recarregar(){
+        console.log("arqueiro recarregou");
     }
 }
 
