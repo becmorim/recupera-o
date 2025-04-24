@@ -5,3 +5,13 @@ class personagem {
         this.mana = mana;
     }
 }
+
+  class guerreiro extends personagem{
+}
+
+  class mago extends personagem{
+}
+
+  class arqueiro extends personagem{
+}
+
