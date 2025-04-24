@@ -7,11 +7,29 @@ class personagem {
 }
 
 class guerreiro extends personagem{
+    atacar(){
+    }
+    defender(){
+    }
+    usarEscudo(){
+    }
 }
 
 class mago extends personagem{
+    atacar(){
+    }
+    defender(){
+    }
+    usarMagia(){
+    }
 }
 
 class arqueiro extends personagem{
+    atacar(){
+    }
+    defender(){
+    }
+    recarregar(){
+    }
 }
 
